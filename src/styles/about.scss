@@ -1,0 +1,138 @@
+#about{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh auto;
+    padding-inline: 5vw;
+
+    &.container{
+        align-items: flex-start;
+        margin: 10vh auto;
+    }
+    
+    #aboutText{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 40%;
+        position: relative;
+
+        h1{
+            font-size: 2rem;
+        }
+
+        p{
+            width: 100%;
+
+            span{
+                font-weight: 700;
+            }
+        }
+
+        .buttons-container{
+            margin-top: 1rem;
+        }
+    }
+
+    #images-techStack{
+        width: 50%;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        #tech-stack{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .stack{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1em;
+                justify-content: center;
+                grid-template-columns: repeat(4, 1fr);
+
+                .tech{
+                    width: 15%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 5px;
+                    padding: 0.5em 0.3em;
+                    justify-content: space-between;
+                    background-color: rgba(0, 0, 0, 0.03);
+                    transition: transform 0.1s;
+
+                    img{
+                        width: 40px;
+                    }
+
+                    span{
+                        font-weight: 600;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+                }
+            }
+        }
+    }
+
+    .images-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .img-container{
+        position: absolute;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+        &.animate{
+            animation: scaleImg forwards 0.3s;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(20deg);
+            z-index: -1;
+            scale: 0.9;
+            box-shadow: none;
+        }
+
+        &:nth-child(3) {
+            transform: rotate(30deg);
+            z-index: -2;
+            scale: 0.9;
+            box-shadow: none;
+        }
+    }
+}
+
+@keyframes scaleImg {
+    0%{
+      scale: 0.9;
+      opacity: 0;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+        z-index: 0;
+    }
+}

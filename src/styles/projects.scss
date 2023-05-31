@@ -1,0 +1,98 @@
+#projects{
+    flex-direction: column;
+
+    &.container{
+        margin: 10vh 0;
+    }
+
+    .heading{
+        .background-text{
+            left: -1.5%;
+        }
+    }
+
+    #projects-list{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 2em;
+        flex-wrap: wrap;
+
+        .project{
+            border: 2px solid black;
+            width: 45%;
+
+            .buttons-container{
+                margin: 0 auto;
+                width: fit-content;
+                margin-bottom: 1rem;
+            }
+
+            .project-name{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0.1em 0.5em;
+
+                h2{
+                    font-size: 1.4rem;
+                }
+
+                span{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    font-style: italic;
+                    color: rgba(0, 0, 0, 0.3);
+                    margin: 0 auto 1em auto;
+                }
+            }
+
+            .project-description{
+                text-align: center;
+                width: 90%;
+                margin: 0 auto 2rem auto;
+            }
+
+            hr{
+                width: 90%;
+                margin: 0 auto 1rem auto;
+                border: 1px solid rgba(0, 0, 0, 0.4);
+            }
+
+            .project-tech{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+                padding: 0.3rem 1rem;
+                margin-bottom: 0.5rem;
+
+                .tech{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 5rem;
+                    min-width: 15%;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    border-radius: 5px;
+                    padding: 0.5em 0.8em;
+
+                    span{
+                        font-size: 0.85rem;
+                        font-weight: 600;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+                }
+
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

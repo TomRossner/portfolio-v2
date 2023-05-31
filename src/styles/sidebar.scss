@@ -1,0 +1,38 @@
+#sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 13vh;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    min-width: 3vw;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    a{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    #sidebar{
+        min-width: auto;
+
+        a{
+            padding: 0.5em 0.35em;
+        }
+    }   
+}
