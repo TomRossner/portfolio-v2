@@ -8,7 +8,7 @@ const Sidebar = () => {
         <a className='sidebar-icon' href="https://github.com/TomRossner/"  target='_blank' rel='noreferrer'>
             <BsGithub className='icon'/>
         </a>
-        <a className='sidebar-icon' href="https://www.linkedin.com/in/tom-rossner/" target='_blank' rel='noreferrer'>
+        <a id='linkedin' className='sidebar-icon' href="https://www.linkedin.com/in/tom-rossner/" target='_blank' rel='noreferrer'>
             <BsLinkedin className='icon'/>
         </a>
     </div>

@@ -1,12 +1,12 @@
-import SASSLogo from "./assets/sass.svg";
-import ReactLogo from "./assets/react.svg";
-import NodeJSLogo from "./assets/nodejs.svg";
-import MongoDBLogo from "./assets/mongodb.svg";
-import FirebaseLogo from "./assets/firebase.svg";
-import ExpressJSLogo from "./assets/expressjs.svg";
-import ReduxLogo from "./assets/redux.svg";
-import FirestoreLogo from "./assets/Firestore.svg";
-import SocketIOLogo from "./assets/socketIO.svg";
+import SASSLogo from "../assets/sass.svg";
+import ReactLogo from "../assets/react.svg";
+import NodeJSLogo from "../assets/nodejs.svg";
+import MongoDBLogo from "../assets/mongodb.svg";
+import FirebaseLogo from "../assets/firebase.svg";
+import ExpressJSLogo from "../assets/expressjs.svg";
+import ReduxLogo from "../assets/redux.svg";
+import FirestoreLogo from "../assets/Firestore.svg";
+import SocketIOLogo from "../assets/socketIO.svg";
 
 export const projects = [
     {
@@ -86,7 +86,7 @@ export const projects = [
     {
         name: "CRWN Clothing",
         shortDesc: "E-commerce app",
-        description: "CRWN Clothing is an E-commerce application which includes different clothing categories for men and women!",
+        description: "CRWN Clothing is an E-commerce application which includes different clothing categories for men and women",
         technologies: [
             {
                 logo: ReactLogo,

@@ -2,8 +2,11 @@ import React from 'react';
 import profile from "../../assets/TOM_PROFILE.jpg";
 import { Link } from 'react-router-dom';
 import Heading from '../common/Heading';
+import useScrollReset from '../../hooks/useScrollReset';
 
 const Home = () => {
+  useScrollReset();
+  
   return (
     <>
     <div id='home'>

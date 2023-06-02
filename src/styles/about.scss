@@ -3,12 +3,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10vh auto;
-    padding-inline: 5vw;
+    flex-direction: column;
 
     &.container{
         align-items: flex-start;
-        margin: 10vh auto;
+        padding: 0 3vw;
+    }
+
+    .heading{
+        left: 3%;
+        margin-bottom: 2rem;
+    }
+
+    #aboutContent{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
     
     #aboutText{
@@ -37,7 +47,7 @@
 
     #images-techStack{
         width: 50%;
-        padding: 3rem 0;
+        transform: translateY(-10%);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -134,5 +144,366 @@
         scale: 1;
         opacity: 1;
         z-index: 0;
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    #app{
+        overflow-y: auto;
+    }
+    #container{
+        width: 75%;
+    }
+
+    #aboutContainer{
+        width: 100%;
+    }
+
+    #about{
+        flex-direction: column;
+        gap: 2rem;
+
+        &.container{
+            width: 100%;
+            margin-bottom: 2rem;
+            padding-inline: 0;
+            gap: 0;
+        }
+
+
+        #aboutContent{
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        #aboutText{
+            width: 45%;
+            max-width: 600px;
+
+            p{
+                font-size: 1.05rem;
+                text-align: left;
+            }
+
+            .buttons-container{
+                margin: 1.5rem 0;
+                gap: 0.5rem;
+
+                a{
+                    font-size: 1.05rem;
+                }
+            }
+        }
+
+        #images-techStack{
+            width: 45%;
+            gap: 3rem;
+            justify-content: center;
+            margin-bottom: 0;
+            transform: translateY(-15%);
+
+            .images-container{
+                width: 70%;
+                max-width: 350px;
+                align-items: center;
+                margin: 2rem auto;
+                justify-content: center;
+    
+                .img-container{
+                    width: 80%;
+                }
+            }
+
+            #tech-stack{
+                width: 100%;
+                
+                .stack{
+                    margin-bottom: 2rem;
+
+                    .tech{
+                        width: 22%;
+                        max-width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    #app{
+        overflow-y: auto;
+    }
+
+    #container{
+        width: 85%;
+    }
+
+    #aboutContainer{
+        width: 100%;
+    }
+
+    #about{
+        flex-direction: column;
+        gap: 2rem;
+
+        &.container{
+            width: 100%;
+            margin-bottom: 2rem;
+            padding-inline: 0;
+        }
+
+
+        #aboutContent{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #aboutText{
+            width: 50%;
+
+            p{
+                font-size: 1.05rem;
+                text-align: left;
+            }
+
+            .buttons-container{
+                margin: 3rem auto 1rem auto;
+
+                a{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        #images-techStack{
+            width: 45%;
+            gap: 3rem;
+            justify-content: unset;
+            margin-bottom: 0;
+            transform: translateY(0);
+
+            .images-container{
+                width: 75%;
+                max-width: 350px;
+                align-items: unset;
+                margin: 2rem auto;
+                justify-content: flex-end;
+    
+                .img-container{
+                    width: 80%;
+                }
+            }
+
+            #tech-stack{
+                width: 100%;
+                
+                .stack{
+                    margin-bottom: 2rem;
+
+                    .tech{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+    #app{
+        overflow-y: auto;
+    }
+    
+    #about{
+        flex-direction: column;
+        gap: 2rem;
+
+
+
+        #aboutContent{
+            flex-direction: column;
+        }
+
+        #aboutText{
+            width: 100%;
+
+            p{
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            .buttons-container{
+                margin: 3rem auto 1rem auto;
+
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        #images-techStack{
+            width: 100%;
+            gap: 5rem;
+            margin-bottom: 0;
+            transform: translateY(0);
+
+            .images-container{
+                width: 90%;
+                max-width: 350px;
+                align-items: center;
+                margin: 2rem auto;
+    
+                .img-container{
+                    width: 80%;
+                }
+            }
+
+            #tech-stack{
+                .stack{
+                    margin-bottom: 2rem;
+
+                    .tech{
+                        width: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 351px) and (max-width: 850px) {
+    #about{
+        flex-direction: column;
+        gap: 2rem;
+
+        #aboutContent{
+            flex-direction: column;
+        }
+
+        .heading{
+            margin-bottom: 0;
+            margin: 2rem auto 0 auto;
+        }
+
+        #aboutText{
+            width: 100%;
+
+            p{
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            .buttons-container{
+                margin: 3rem auto 1rem auto;
+
+                a{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .images-container{
+            width: 90%;
+            max-width: 350px;
+            align-items: center;
+            margin: 2rem auto;
+
+            .img-container{
+                width: 80%;
+            }
+        }
+
+        #images-techStack{
+            width: 100%;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            transform: translateY(0);
+
+            #tech-stack{
+                .stack{
+                    margin-bottom: 2rem;
+
+                    .tech{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #about{
+        flex-direction: column;
+        gap: 0rem;
+        overflow-x: hidden;
+
+        #aboutContent{
+            flex-direction: column;
+        }
+
+        .heading{
+            margin-bottom: 0;
+            margin: 2rem auto 0 auto;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+
+            .heading-text{
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        #aboutText{
+            width: 100%;
+
+            p{
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            .buttons-container{
+                margin: 3rem auto 1rem auto;
+                flex-direction: column;
+                width: 100%;
+                padding: 0 3%;
+
+                a{
+                    width: 100%;
+                    font-size: 1.2rem;
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+
+        .images-container{
+            width: 90%;
+            max-width: 350px;
+            margin: 2rem auto;
+            align-items: center;
+
+            .img-container{
+                width: 80%;
+            }
+        }
+
+        #images-techStack{
+            width: 100%;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            transform: translateY(0);
+
+            #tech-stack{
+                .stack{
+                    margin-bottom: 2rem;
+                    .tech{
+                        width: 45%;
+                    }
+                }
+            }
+        }
     }
 }

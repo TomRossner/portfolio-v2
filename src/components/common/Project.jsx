@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsCodeSlash } from 'react-icons/bs';
+import {TbWorldWww} from "react-icons/tb";
 
 const Project = ({project}) => {
     const {name, technologies, shortDesc, description, repoLink, webPage} = project;
@@ -11,8 +13,8 @@ const Project = ({project}) => {
         </div>
         <p className='project-description'>{description}.</p>
         <div className='buttons-container'>
-          <a href={webPage} target='_blank' rel='noreferrer' className='link'>Live app</a>
-          <a href={repoLink} target='_blank' rel='noreferrer' className='link'>Source code</a>
+          <a href={webPage} target='_blank' rel='noreferrer' className='link'><TbWorldWww className='icon'/>Live app</a>
+          <a href={repoLink} target='_blank' rel='noreferrer' className='link'><BsCodeSlash className='icon'/>Source code</a>
         </div>
         <hr />
         <div className='project-tech'>

@@ -1,18 +1,18 @@
-import JSLogo from "./assets/javascript.svg";
-import HTMLLogo from "./assets/html.svg";
-import CSSLOGO from "./assets/css3.svg";
-import PostgreSQLLogo from "./assets/postgresql.svg";
-import SASSLogo from "./assets/sass.svg";
-import ReactLogo from "./assets/react.svg";
-import NodeJSLogo from "./assets/nodejs.svg";
-import MongoDBLogo from "./assets/mongodb.svg";
-import FirebaseLogo from "./assets/firebase.svg";
-import MySQLLogo from "./assets/mysql.svg";
-import ExpressJSLogo from "./assets/expressjs.svg";
-import ReduxLogo from "./assets/redux.svg";
-import SocketIOLogo from "./assets/socketIO.svg";
-import GitLogo from "./assets/Git.svg";
-import VsCodeLogo from "./assets/vscode.svg";
+import JSLogo from "../assets/javascript.svg";
+import HTMLLogo from "../assets/html.svg";
+import CSSLOGO from "../assets/css3.svg";
+import PostgreSQLLogo from "../assets/postgresql.svg";
+import SASSLogo from "../assets/sass.svg";
+import ReactLogo from "../assets/react.svg";
+import NodeJSLogo from "../assets/nodejs.svg";
+import MongoDBLogo from "../assets/mongodb.svg";
+import FirebaseLogo from "../assets/firebase.svg";
+import MySQLLogo from "../assets/mysql.svg";
+import ExpressJSLogo from "../assets/expressjs.svg";
+import ReduxLogo from "../assets/redux.svg";
+import SocketIOLogo from "../assets/socketIO.svg";
+import GitLogo from "../assets/Git.svg";
+import VsCodeLogo from "../assets/vscode.svg";
 
 export const techs = [
     {
