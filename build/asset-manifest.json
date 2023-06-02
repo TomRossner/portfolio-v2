@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.5faf191a.css",
-    "main.js": "/static/js/main.5c0f8262.js",
+    "main.css": "/static/css/main.65328f02.css",
+    "main.js": "/static/js/main.c76378ba.js",
     "static/js/787.d9a20797.chunk.js": "/static/js/787.d9a20797.chunk.js",
     "static/media/tom_tmb.jpg": "/static/media/tom_tmb.2217804ed159af539808.jpg",
     "static/media/tomrossner.pdf": "/static/media/tomrossner.3896d7cb96ce9f1ab2c5.pdf",
     "static/media/TOM_PROFILE.jpg": "/static/media/TOM_PROFILE.da1461f5e983224548ad.jpg",
     "static/media/tomprofile-1.jpg": "/static/media/tomprofile-1.c753a71b840960e3457a.jpg",
+    "static/media/tom.png": "/static/media/tom.bd53597e851e4aac8b0a.png",
     "static/media/postgresql.svg": "/static/media/postgresql.7bc394e86ea1f692d59a3d484ad156af.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.452bfc77ef397456ac6393170227c033.svg",
     "static/media/vscode.svg": "/static/media/vscode.ae90970b7990088d824d8e3a11d9024f.svg",
@@ -25,12 +26,12 @@
     "static/media/javascript.svg": "/static/media/javascript.218515feb76f692771fe00cfeadc46c8.svg",
     "static/media/firebase.svg": "/static/media/firebase.82a35fc0b90d124a8e7333989f767fd3.svg",
     "static/media/html.svg": "/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
-    "main.5faf191a.css.map": "/static/css/main.5faf191a.css.map",
-    "main.5c0f8262.js.map": "/static/js/main.5c0f8262.js.map",
+    "main.65328f02.css.map": "/static/css/main.65328f02.css.map",
+    "main.c76378ba.js.map": "/static/js/main.c76378ba.js.map",
     "787.d9a20797.chunk.js.map": "/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5faf191a.css",
-    "static/js/main.5c0f8262.js"
+    "static/css/main.65328f02.css",
+    "static/js/main.c76378ba.js"
   ]
 }

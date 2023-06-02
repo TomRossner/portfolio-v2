@@ -20,6 +20,8 @@
 
     #navDesktop{
         padding-inline: 4em;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -190,7 +192,7 @@ nav{
 
 @media screen and (max-width: 380px) {
     #navbar{
-        justify-content: flex-end;
+        // justify-content: flex-end;
         padding-inline: 5vw;
     }
 }
