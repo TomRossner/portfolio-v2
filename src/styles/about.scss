@@ -42,6 +42,10 @@
 
         .buttons-container{
             margin-top: 1rem;
+
+            a{
+                background-color: rgba(0, 0, 0, 0.05);
+            }
         }
     }
 
@@ -373,6 +377,30 @@
     }
 }
 
+@media screen and (min-width: 370px) and (max-width: 510px) {
+    #aboutText{
+        width: 100%;
+
+        p{
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .buttons-container{
+            margin: 3rem auto 1rem auto;
+            width: 100%;
+            max-width: 300px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a{
+                font-size: 1.1rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 351px) and (max-width: 850px) {
     #about{
         flex-direction: column;
@@ -487,7 +515,6 @@
                 a{
                     width: 100%;
                     font-size: 1.2rem;
-                    background-color: rgba(0, 0, 0, 0.05);
                 }
             }
         }
