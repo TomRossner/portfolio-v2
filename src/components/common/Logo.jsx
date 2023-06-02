@@ -8,6 +8,7 @@ const Logo = () => {
   return (
     <div id='logo' onClick={() => navigate('/')}>
       <img src={logo} alt='logo'/>
+      <span>TOM ROSSNER</span>
     </div>
   )
 }
