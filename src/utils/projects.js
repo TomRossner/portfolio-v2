@@ -80,8 +80,8 @@ export const projects = [
                 name: "Redux"
             }
         ],
-        repoLink: "https://github.com/TomRossner/smart-brain.git",
-        webPage: "https://TomRossner.github.io/smart-brain"
+        repoLink: "https://github.com/TomRossner/smartbrain.git",
+        webPage: "https://TomRossner.github.io/smartbrain"
     },
     {
         name: "CRWN Clothing",
