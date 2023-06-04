@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a534c4e5.css",
-    "main.js": "/static/js/main.0b3a55f1.js",
+    "main.css": "/static/css/main.8c122243.css",
+    "main.js": "/static/js/main.3bb1bf1b.js",
     "static/js/787.d9a20797.chunk.js": "/static/js/787.d9a20797.chunk.js",
     "static/media/tom_tmb.jpg": "/static/media/tom_tmb.2217804ed159af539808.jpg",
-    "static/media/tomrossner.pdf": "/static/media/tomrossner.3896d7cb96ce9f1ab2c5.pdf",
+    "static/media/tomrossner.pdf": "/static/media/tomrossner.738ac7e21eb6819d004f.pdf",
     "static/media/TOM_PROFILE.jpg": "/static/media/TOM_PROFILE.da1461f5e983224548ad.jpg",
     "static/media/tomprofile-1.jpg": "/static/media/tomprofile-1.c753a71b840960e3457a.jpg",
     "static/media/tom.png": "/static/media/tom.bd53597e851e4aac8b0a.png",
@@ -26,12 +26,12 @@
     "static/media/javascript.svg": "/static/media/javascript.218515feb76f692771fe00cfeadc46c8.svg",
     "static/media/firebase.svg": "/static/media/firebase.82a35fc0b90d124a8e7333989f767fd3.svg",
     "static/media/html.svg": "/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
-    "main.a534c4e5.css.map": "/static/css/main.a534c4e5.css.map",
-    "main.0b3a55f1.js.map": "/static/js/main.0b3a55f1.js.map",
+    "main.8c122243.css.map": "/static/css/main.8c122243.css.map",
+    "main.3bb1bf1b.js.map": "/static/js/main.3bb1bf1b.js.map",
     "787.d9a20797.chunk.js.map": "/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a534c4e5.css",
-    "static/js/main.0b3a55f1.js"
+    "static/css/main.8c122243.css",
+    "static/js/main.3bb1bf1b.js"
   ]
 }

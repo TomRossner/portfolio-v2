@@ -25,11 +25,14 @@ const NavMobile = () => {
             <Link to={'/about'} className='nav-link' onClick={closeMenu}>About</Link>
             <Link to={'/contact'} className='nav-link' onClick={closeMenu}>Contact</Link>
         </ul>
-        <button id='resume' onClick={handleDownload}>
+        {/* <button id='resume' onClick={handleDownload}>
           <BsDownload className='icon'/>
           Download Resume
-        </button>
-        <Sidebar/>
+        </button> */}
+        <div id='github-linkedin-buttons'>
+          <h2>Find me on</h2>
+          <Sidebar/>
+        </div>
     </nav>
   )
 }

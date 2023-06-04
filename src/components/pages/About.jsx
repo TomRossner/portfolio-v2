@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import Heading from '../common/Heading';
 import { techs } from '../../utils/techstack';
 import useScrollReset from '../../hooks/useScrollReset';
+import { BsDownload } from 'react-icons/bs';
+import Tom_Rossner_Resume from "../../assets/tomrossner.pdf";
 
 const About = () => {
   const index = useRef(0);
@@ -26,6 +28,15 @@ const About = () => {
     } else {
       setCurrentImg(images[imgIndex]);
     }
+  }
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = Tom_Rossner_Resume;
+    link.download = 'tomrossner.pdf';
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.click();
   }
 
   useEffect(() => {
@@ -56,6 +67,10 @@ const About = () => {
             <div className='buttons-container'>
               <Link className='link' to={'/projects'}>Check out my projects</Link>
               <Link className='link' to={'/contact'}>Get in touch with me!</Link>
+              <button id='resume' onClick={handleDownload}>
+                <BsDownload className='icon'/>
+                Download Resume
+              </button>
             </div>
           </div>
           <div id='images-techStack'>
