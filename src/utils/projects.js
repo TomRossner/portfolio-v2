@@ -109,7 +109,7 @@ export const projects = [
                 name: "Redux"
             }
         ],
-        repoLink: "https://github.com/TomRossner/CRWN-Clothing.git",
-        webPage: "https://TomRossner.github.io/CRWN-Clothing"
+        repoLink: "https://github.com/TomRossner/crwn-clothing.git",
+        webPage: "https://TomRossner.github.io/crwn-clothing"
     }
 ]
