@@ -5,8 +5,9 @@ import MongoDBLogo from "../assets/mongodb.svg";
 import FirebaseLogo from "../assets/firebase.svg";
 import ExpressJSLogo from "../assets/expressjs.svg";
 import ReduxLogo from "../assets/redux.svg";
-import FirestoreLogo from "../assets/Firestore.svg";
 import SocketIOLogo from "../assets/socketIO.svg";
+import TypeScriptLogo from "../assets/typescript.svg";
+import CSSLogo from "../assets/css3.svg";
 
 export const projects = [
     {
@@ -19,8 +20,8 @@ export const projects = [
                 name: "React"
             },
             {
-                logo: MongoDBLogo,
-                name: "MongoDB"
+                logo: ReduxLogo,
+                name: "Redux"
             },
             {
                 logo: NodeJSLogo,
@@ -31,8 +32,12 @@ export const projects = [
                 name: "Express"
             },
             {
-                logo: ReduxLogo,
-                name: "Redux"
+                logo: SocketIOLogo,
+                name: "Socket.io"
+            },
+            {
+                logo: MongoDBLogo,
+                name: "MongoDB"
             },
             {
                 logo: FirebaseLogo,
@@ -41,10 +46,6 @@ export const projects = [
             {
                 logo: SASSLogo,
                 name: "SASS"
-            },
-            {
-                logo: SocketIOLogo,
-                name: "Socket.io"
             }
         ],
         repoLink: "https://github.com/TomRossner/project-mania.git",
@@ -60,6 +61,10 @@ export const projects = [
                 name: "React"
             },
             {
+                logo: ReduxLogo,
+                name: "Redux"
+            },
+            {
                 logo: NodeJSLogo,
                 name: "Node.js"
             },
@@ -68,17 +73,13 @@ export const projects = [
                 name: "Express"
             },
             {
-                logo: SASSLogo,
-                name: "SASS"
-            },
-            {
                 logo: MongoDBLogo,
                 name: "MongoDB"
             },
             {
-                logo: ReduxLogo,
-                name: "Redux"
-            }
+                logo: SASSLogo,
+                name: "SASS"
+            },
         ],
         repoLink: "https://github.com/TomRossner/smartbrain.git",
         webPage: "https://TomRossner.github.io/smartbrain"
@@ -86,30 +87,47 @@ export const projects = [
     {
         name: "CRWN Clothing",
         shortDesc: "E-commerce app",
-        description: "CRWN Clothing is an E-commerce application which includes different clothing categories for men and women",
+        description: "CRWN Clothing is an E-commerce application which includes different clothing categories for both men and women",
         technologies: [
             {
                 logo: ReactLogo,
                 name: "React"
             },
             {
-                logo: FirebaseLogo,
-                name: "Firebase"
+                logo: ReduxLogo,
+                name: "Redux"
             },
             {
-                logo: FirestoreLogo,
-                name: "FireStore"
+                logo: FirebaseLogo,
+                name: "Firebase & Firestore"
             },
             {
                 logo: SASSLogo,
                 name: "SASS"
-            },
-            {
-                logo: ReduxLogo,
-                name: "Redux"
             }
         ],
         repoLink: "https://github.com/TomRossner/crwn-clothing.git",
         webPage: "https://TomRossner.github.io/crwn-clothing"
+    },
+    {
+        name: "Wordle",
+        shortDesc: "Wordle game clone",
+        description: "Wordle is a word guessing game, the goal is to find the secret 5-letter word in only 6 attempts",
+        technologies: [
+            {
+                logo: ReactLogo,
+                name: "React"
+            },
+            {
+                logo: TypeScriptLogo,
+                name: "TypeScript"
+            },
+            {
+                logo: CSSLogo,
+                name: "CSS3"
+            }
+        ],
+        repoLink: "https://github.com/TomRossner/wordlev2.git",
+        webPage: "https://TomRossner.github.io/wordlev2"
     }
 ]

@@ -13,8 +13,29 @@ import ReduxLogo from "../assets/redux.svg";
 import SocketIOLogo from "../assets/socketIO.svg";
 import GitLogo from "../assets/Git.svg";
 import VsCodeLogo from "../assets/vscode.svg";
+import TypeScriptLogo from "../assets/typescript.svg";
 
 export const techs = [
+    {
+      name: 'React',
+      logo: ReactLogo
+    },
+    {
+      name: 'Redux',
+      logo: ReduxLogo
+    },
+    {
+      name: 'TypeScript',
+      logo: TypeScriptLogo
+    },
+    {
+      name: 'JavaScript',
+      logo: JSLogo
+    },
+    {
+      name: 'Node.js',
+      logo: NodeJSLogo
+    },
     {
       name: 'HTML5',
       logo: HTMLLogo
@@ -28,24 +49,12 @@ export const techs = [
       logo: SASSLogo
     },
     {
-      name: 'Javascript',
-      logo: JSLogo
-    },
-    {
       name: 'MySQL',
       logo: MySQLLogo
     },
     {
       name: 'PostgreSQL',
       logo: PostgreSQLLogo
-    },
-    {
-      name: 'React',
-      logo: ReactLogo
-    },
-    {
-      name: 'Node.js',
-      logo: NodeJSLogo
     },
     {
       name: 'MongoDB',
@@ -58,10 +67,6 @@ export const techs = [
     {
       name: 'Express.js',
       logo: ExpressJSLogo
-    },
-    {
-      name: 'Redux',
-      logo: ReduxLogo
     },
     {
       name: 'Socket.io',
