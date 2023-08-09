@@ -99,7 +99,7 @@ export const projects = [
             },
             {
                 logo: FirebaseLogo,
-                name: "Firebase & Firestore"
+                name: "Firebase"
             },
             {
                 logo: SASSLogo,
