@@ -7,3 +7,7 @@ export const ANIMATE = {
     IN: 'animate-in',
     OUT: 'animate-out',
 }
+
+export const getTheme = () => {
+    return localStorage.getItem('theme') || THEME.LIGHT;
+}
