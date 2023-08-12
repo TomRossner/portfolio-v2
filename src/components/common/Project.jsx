@@ -1,12 +1,18 @@
 import React from 'react';
 import { BsCodeSlash } from 'react-icons/bs';
 import {TbWorldWww} from "react-icons/tb";
+import useTheme from '../../hooks/useTheme';
+import { THEME } from '../../utils/theme';
 
 const Project = ({project}) => {
     const {name, technologies, shortDesc, description, repoLink, webPage} = project;
+    
+    const {theme} = useTheme();
+    const {DARK} = THEME;
 
   return (
-    <div className='project'>
+    <div className={`project ${theme === DARK ? 'dark' : ''}`}>
+      {/* <img src={project.bgImg} alt="bg"/> */}
         <div className='project-name'>
           <h2>{name}</h2>
           <span>{shortDesc}</span>

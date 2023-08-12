@@ -1,3 +1,5 @@
+@import "./dark.scss";
+
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +15,15 @@
     flex-direction: column;
     user-select: none;
     overflow-y: auto;
+    position: relative;
+    z-index: 0;
 
     .flex1{
         flex: 1;
+    }
+
+    &.dark{
+        background-color: rgb(12, 12, 12);
     }
 }
 
@@ -95,6 +103,14 @@
                 text-transform: uppercase;
                 font-size: 1rem;
 
+                &.dark{
+                    color: $dark;
+
+                    &:hover{
+                        animation: outlineAnimation forwards 0.7s;
+                    }
+                }
+
                 &:hover{
                     transform: unset;
                     animation: outlineAnimation forwards 0.5s;
@@ -135,6 +151,11 @@
         padding: 0.3em 1em;
         color: black;
         transition: transform 0.1s;
+
+        &.dark {
+            background-color: white;
+            color: $light;
+        }
 
         &:active{
             color: black;

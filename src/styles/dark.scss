@@ -1,0 +1,6 @@
+$dark: rgb(23, 23, 23);
+$light: rgb(250, 250, 250);
+
+.dark{
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}

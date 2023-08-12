@@ -1,15 +1,19 @@
 import React, { createContext, useState } from 'react';
+import {THEME} from "../utils/theme";
 
 export const AppContext = createContext({
     menuOpen: false,
     setMenuOpen: () => {},
     toggleMenu: () => {},
-    closeMenu: () => {}
+    closeMenu: () => {},
+    theme: THEME.LIGHT,
+    setTheme: () => {}
 })
 
 const AppProvider = ({children}) => {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const [theme, setTheme] = useState(THEME.LIGHT);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -19,11 +23,15 @@ const AppProvider = ({children}) => {
       setMenuOpen(false);
     }
 
+    
+
     const values = {
         menuOpen,
         setMenuOpen,
         toggleMenu,
-        closeMenu
+        closeMenu,
+        setTheme,
+        theme
     }
     
   return (

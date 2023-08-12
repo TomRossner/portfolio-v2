@@ -1,3 +1,5 @@
+@import "./dark.scss";
+
 #sidebar{
     display: flex;
     justify-content: center;
@@ -10,6 +12,10 @@
     min-width: 3vw;
     background-color: rgba(0, 0, 0, 0.9);
 
+    &.dark {
+        background-color: $light;
+    }
+
     .sidebar-icon{
         height: 50%;
         width: 100%;
@@ -20,6 +26,14 @@
         font-size: 2rem;
         text-decoration: none;
         color: white;
+
+        &.dark {
+            color: $dark;
+
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
 
         &#linkedin{
             color: rgba(19, 95, 236, 1);

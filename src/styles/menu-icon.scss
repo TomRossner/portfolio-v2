@@ -1,3 +1,5 @@
+@import "./dark.scss";
+
 #hamburger{
     height: 3rem;
     width: 3rem;
@@ -46,6 +48,9 @@
         position: absolute;
         transition: transform 0.1s;
         
+        &.dark{
+            background-color: $light;
+        }
 
         &:first-child{
             top: 25%;

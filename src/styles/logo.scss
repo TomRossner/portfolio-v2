@@ -1,3 +1,5 @@
+@import "./dark.scss";
+
 #logo{
     cursor: pointer;
     font-weight: 700;
@@ -16,9 +18,21 @@
         padding-top: 0.3em;
         font-family: 'Josefin Sans', sans-serif;
         color: rgba(0, 0, 0, 0.8);
+
+        &.dark{
+            color: $light;
+        }
     }
 }
 
+@media screen and (min-width: 901px) {
+    #logo{
+        span{
+            width: max-content;
+            font-size: 1.9rem;
+        }
+    }
+}
 @media screen and (max-width: 900px) {
     #logo{
         span{

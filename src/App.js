@@ -11,10 +11,15 @@ import Footer from './components/layout/Footer';
 import Space from "./components/common/Space";
 import Sidebar from './components/layout/Sidebar';
 import NavMobile from './components/layout/NavMobile';
+import useTheme from './hooks/useTheme';
+import { THEME } from './utils/theme';
 
 function App() {
+  const {theme} = useTheme();
+  const {DARK} = THEME;
+  
   return (
-    <div id='app'>
+    <div id='app' className={`${theme === DARK ? 'dark' : ''}`}>
       <Navigation/>
       <NavMobile/>
       <Sidebar/>

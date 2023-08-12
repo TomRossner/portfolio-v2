@@ -1,3 +1,5 @@
+@import "./dark.scss";
+
 #about{
     width: 100%;
     display: flex;
@@ -29,13 +31,17 @@
         position: relative;
         margin-bottom: 2rem;
 
+        &.dark {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
         h1{
             font-size: 2rem;
         }
 
         p{
             width: 100%;
-
+            
             span{
                 font-weight: 700;
             }
@@ -46,6 +52,12 @@
 
             a{
                 background-color: rgba(0, 0, 0, 0.05);
+
+                &.dark {
+                    background-color: white;
+                    color: $dark;
+                    border-color: $light;
+                }
             }
             
             #resume{
@@ -110,6 +122,10 @@
                     justify-content: space-between;
                     background-color: rgba(0, 0, 0, 0.03);
                     transition: transform 0.1s;
+
+                    &.dark {
+                        background-color: rgba(255, 255, 255, 0.95);
+                    }
 
                     img{
                         width: 40px;

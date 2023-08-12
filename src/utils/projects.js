@@ -8,6 +8,10 @@ import ReduxLogo from "../assets/redux.svg";
 import SocketIOLogo from "../assets/socketIO.svg";
 import TypeScriptLogo from "../assets/typescript.svg";
 import CSSLogo from "../assets/css3.svg";
+import wordleBG from "../assets/wordle.png";
+import projectManiaBG from "../assets/projectMania.png";
+import smartBrainBG from "../assets/smartBrain.png";
+import crwnClothingBG from "../assets/crwnClothing.png";
 
 export const projects = [
     {
@@ -49,7 +53,8 @@ export const projects = [
             }
         ],
         repoLink: "https://github.com/TomRossner/project-mania.git",
-        webPage: "https://TomRossner.github.io/project-mania"
+        webPage: "https://TomRossner.github.io/project-mania",
+        bgImg: projectManiaBG
     },
     {
         name: "SmartBrain",
@@ -82,7 +87,8 @@ export const projects = [
             },
         ],
         repoLink: "https://github.com/TomRossner/smartbrain.git",
-        webPage: "https://TomRossner.github.io/smartbrain"
+        webPage: "https://TomRossner.github.io/smartbrain",
+        bgImg: smartBrainBG
     },
     {
         name: "CRWN Clothing",
@@ -107,7 +113,8 @@ export const projects = [
             }
         ],
         repoLink: "https://github.com/TomRossner/crwn-clothing.git",
-        webPage: "https://TomRossner.github.io/crwn-clothing"
+        webPage: "https://TomRossner.github.io/crwn-clothing",
+        bgImg: crwnClothingBG
     },
     {
         name: "Wordle",
@@ -128,6 +135,7 @@ export const projects = [
             }
         ],
         repoLink: "https://github.com/TomRossner/wordlev2.git",
-        webPage: "https://TomRossner.github.io/wordlev2"
+        webPage: "https://TomRossner.github.io/wordlev2",
+        bgImg: wordleBG
     }
 ]
