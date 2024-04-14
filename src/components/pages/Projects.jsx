@@ -27,7 +27,7 @@ const Projects = () => {
         target='_blank'
         rel='noreferrer'
         id='moreProjects'
-        className={`${theme === DARK ? 'dark' : ''}`}
+        className={`${theme === DARK && 'dark'}`}
       ><BsGithub className='icon'/>See more projects on Github</a>
     </div>
   )

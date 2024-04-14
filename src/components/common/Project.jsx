@@ -11,7 +11,7 @@ const Project = ({project}) => {
     const {DARK} = THEME;
 
   return (
-    <div className={`project ${theme === DARK ? 'dark' : ''}`}>
+    <div className={`project ${theme === DARK && 'dark'}`}>
       {/* <img src={project.bgImg} alt="bg"/> */}
         <div className='project-name'>
           <h2>{name}</h2>

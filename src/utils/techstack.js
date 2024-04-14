@@ -12,10 +12,15 @@ import ExpressJSLogo from "../assets/expressjs.svg";
 import ReduxLogo from "../assets/redux.svg";
 import SocketIOLogo from "../assets/socketIO.svg";
 import GitLogo from "../assets/Git.svg";
-import VsCodeLogo from "../assets/vscode.svg";
 import TypeScriptLogo from "../assets/typescript.svg";
+import NextJsLogo from "../assets/nextjs.svg";
+import TailwindCssLogo from "../assets/tailwindcss.svg";
 
 export const techs = [
+    {
+      name: 'Next.js',
+      logo: NextJsLogo
+    },
     {
       name: 'React',
       logo: ReactLogo
@@ -41,12 +46,16 @@ export const techs = [
       logo: HTMLLogo
     },
     {
-      name: 'CSS3',
-      logo: CSSLOGO
+      name: 'TailwindCSS',
+      logo: TailwindCssLogo
     },
     {
       name: 'SASS',
       logo: SASSLogo
+    },
+    {
+      name: 'CSS3',
+      logo: CSSLOGO
     },
     {
       name: 'MySQL',
@@ -76,8 +85,4 @@ export const techs = [
       name: 'Git',
       logo: GitLogo
     },
-    {
-      name: 'VS Code',
-      logo: VsCodeLogo
-    },
-  ]
+]

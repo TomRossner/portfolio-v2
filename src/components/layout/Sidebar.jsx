@@ -9,11 +9,11 @@ const Sidebar = () => {
   const {DARK} = THEME;
 
   return (
-    <div id='sidebar' className={`${theme === DARK ? 'dark' : ''}`}>
-        <a className={`sidebar-icon ${theme === DARK ? 'dark' : ''}`} href="https://github.com/TomRossner/"  target='_blank' rel='noreferrer'>
+    <div id='sidebar' className={`${theme === DARK && 'dark'}`}>
+        <a className={`sidebar-icon ${theme === DARK && 'dark'}`} href="https://github.com/TomRossner/"  target='_blank' rel='noreferrer noopener'>
             <BsGithub className='icon'/>
         </a>
-        <a id='linkedin' className={`sidebar-icon ${theme === DARK ? 'dark' : ''}`} href="https://www.linkedin.com/in/tom-rossner/" target='_blank' rel='noreferrer'>
+        <a id='linkedin' className={`sidebar-icon ${theme === DARK && 'dark'}`} href="https://www.linkedin.com/in/tom-rossner/" target='_blank' rel='noreferrer noopener'>
             <BsLinkedin className='icon'/>
         </a>
     </div>

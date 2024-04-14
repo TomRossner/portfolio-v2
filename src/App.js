@@ -19,7 +19,7 @@ function App() {
   const {DARK} = THEME;
   
   return (
-    <div id='app' className={`${theme === DARK ? 'dark' : ''}`}>
+    <div id='app' className={`${theme === DARK && 'dark'}`}>
       <Navigation/>
       <NavMobile/>
       <Sidebar/>

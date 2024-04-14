@@ -11,9 +11,9 @@ const MenuIcon = () => {
 
   return (
     <div id='hamburger' className={menuOpen ? 'open' : 'closed'} onClick={toggleMenu}>
-        <div className={`line ${theme === DARK ? 'dark' : ''}`}/>
-        <div className={`line ${theme === DARK ? 'dark' : ''}`}/>
-        <div className={`line ${theme === DARK ? 'dark' : ''}`}/>
+        <div className={`line ${theme === DARK && 'dark'}`}/>
+        <div className={`line ${theme === DARK && 'dark'}`}/>
+        <div className={`line ${theme === DARK && 'dark'}`}/>
     </div>
   )
 }

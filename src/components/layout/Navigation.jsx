@@ -38,10 +38,10 @@ const Navigation = () => {
         <Logo/>
         <Space/>
         <ul className={menuOpen ? 'open' : 'closed'}>
-            <Link to={'/'} className={`nav-link ${theme === DARK ? 'dark' : ''}`} onClick={closeMenu}>Home</Link>
-            <Link to={'/projects'} className={`nav-link ${theme === DARK ? 'dark' : ''}`} onClick={closeMenu}>Projects</Link>
-            <Link to={'/about'} className={`nav-link ${theme === DARK ? 'dark' : ''}`} onClick={closeMenu}>About</Link>
-            <Link to={'/contact'} className={`nav-link ${theme === DARK ? 'dark' : ''}`} onClick={closeMenu}>Contact</Link>
+            <Link to={'/'} className={`nav-link ${theme === DARK && 'dark'}`} onClick={closeMenu}>Home</Link>
+            <Link to={'/projects'} className={`nav-link ${theme === DARK && 'dark'}`} onClick={closeMenu}>Projects</Link>
+            <Link to={'/about'} className={`nav-link ${theme === DARK && 'dark'}`} onClick={closeMenu}>About</Link>
+            <Link to={'/contact'} className={`nav-link ${theme === DARK && 'dark'}`} onClick={closeMenu}>Contact</Link>
         </ul>
         <div className='buttons-container'>
           <button id='resume' onClick={handleDownload}>

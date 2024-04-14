@@ -9,8 +9,8 @@ const Heading = ({text}) => {
 
   return (
     <div className='heading'>
-        <span className={`background-text ${theme === DARK ? 'dark' : ''}`}>{text}</span>
-        <h1 className={`heading-text ${theme === DARK ? 'dark' : ''}`}>{text}</h1>
+        <span className={`background-text ${theme === DARK && 'dark'}`}>{text}</span>
+        <h1 className={`heading-text ${theme === DARK && 'dark'}`}>{text}</h1>
     </div>
   )
 }

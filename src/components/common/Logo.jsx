@@ -15,7 +15,7 @@ const Logo = () => {
   return (
     <div id='logo' onClick={() => navigate('/')}>
       <img src={theme === DARK ? logoLight : logo} alt='logo'/>
-      <span className={`${theme === DARK ? 'dark' : ''}`}>TOM ROSSNER</span>
+      <span className={`${theme === DARK && 'dark'}`}>TOM ROSSNER</span>
     </div>
   )
 }

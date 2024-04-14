@@ -19,8 +19,8 @@ const Home = () => {
             <Heading text={`Hi, I'm Tom`}/>
             <Heading text={`I'm a Full Stack Developer`}/>
             <div className='buttons-container'>
-                <Link to={'/projects'} className={`link ${theme === DARK ? 'dark' : ''}`}>My projects</Link>
-                <Link to={'/about'} className={`link ${theme === DARK ? 'dark' : ''}`}>About me</Link>
+                <Link to={'/projects'} className={`link ${theme === DARK && 'dark'}`}>My projects</Link>
+                <Link to={'/about'} className={`link ${theme === DARK && 'dark'}`}>About me</Link>
             </div>
         </div>
         <img src={profile} alt="profile" loading='lazy'/>

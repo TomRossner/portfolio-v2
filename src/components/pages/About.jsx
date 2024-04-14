@@ -63,7 +63,7 @@ const About = () => {
       <div id='about' className='container'>
         <Heading text={'About me'}/>
         <div id='aboutContent'>
-          <div id='aboutText' className={`${theme === DARK ? 'dark' : ''}`}>
+          <div id='aboutText' className={`${theme === DARK && 'dark'}`}>
             <p>Hello, I'm Tom Rossner, a Full Stack developer with a passion for creating robust and innovative web applications. Proficient in technologies such as <span>React & Redux, Node.js, MongoDB, and Express</span>, I specialize in developing dynamic and user-friendly solutions.</p>
             <p>With my strong attention to detail and focus on writing clean and maintainable code, I ensure that every aspect of the development process is thoroughly considered, resulting in seamless and efficient applications.</p>
             <p>Being a problem solver by nature, I enjoy tackling complex challenges and finding creative solutions.</p>
@@ -71,8 +71,8 @@ const About = () => {
             <p>I'm excited to collaborate with forward-thinking individuals and organizations to bring their ideas to life. Feel free to explore my portfolio and get in touch with me to discuss potential opportunities. Let's create something exceptional together!</p>
 
             <div className='buttons-container'>
-              <Link className={`link ${theme === DARK ? 'dark' : ''}`} to={'/projects'}>Check out my projects</Link>
-              <Link className={`link ${theme === DARK ? 'dark' : ''}`} to={'/contact'}>Get in touch with me!</Link>
+              <Link className={`link ${theme === DARK && 'dark'}`} to={'/projects'}>Check out my projects</Link>
+              <Link className={`link ${theme === DARK && 'dark'}`} to={'/contact'}>Get in touch with me!</Link>
               <button id='resume' onClick={handleDownload}>
                 <BsDownload className='icon'/>
                 Download Resume
@@ -82,7 +82,7 @@ const About = () => {
           <div id='images-techStack'>
             <div className='images-container'>
 
-              <div className={animate ? 'img-container animate' : 'img-container'} onClick={showNext}>
+              <div className={`img-container ${animate && 'animate'}`} onClick={showNext}>
                 <img src={currentImg} alt="profile"/>
               </div>
 
@@ -97,7 +97,7 @@ const About = () => {
             <div id='tech-stack'>
               <div className='stack'>
                 {techs.map(tech => (
-                  <div className={`tech ${theme === DARK ? 'dark' : ''}`} key={tech.name} title={tech.name}>
+                  <div className={`tech ${theme === DARK && 'dark'}`} key={tech.name} title={tech.name}>
                     <img src={tech.logo} alt={tech.name} />
                     <span>{tech.name}</span>
                   </div>

@@ -17,9 +17,9 @@ const DarkModeButton = () => {
     }
 
   return (
-    <button id='theme-button' onClick={toggleTheme} title='Toggle dark mode' className={`${theme === DARK ? 'dark' : ''}`}>
+    <button id='theme-button' onClick={toggleTheme} title='Toggle dark mode' className={`${theme === DARK && 'dark'}`}>
         <span
-            className={`icon theme ${theme === LIGHT ? animateLight : animateDark} ${theme === DARK ? 'dark' : ''}`}
+            className={`icon theme ${theme === LIGHT ? animateLight : animateDark} ${theme === DARK && 'dark'}`}
             onAnimationEnd={animate}
         >
             {theme === LIGHT ? <IoMoonSharp/> : <IoSunnySharp/>}

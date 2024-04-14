@@ -10,7 +10,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   
   return (
-    <footer className={`${theme === DARK ? 'dark' : ''}`}>
+    <footer className={`${theme === DARK && 'dark'}`}>
         <p>Portfolio by Tom Rossner&copy; {year} | All rights reserved</p>
     </footer>
   )
