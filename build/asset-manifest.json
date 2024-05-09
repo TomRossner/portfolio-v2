@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.5d97759a.css",
-    "main.js": "/static/js/main.fca4533d.js",
+    "main.js": "/static/js/main.68bff69f.js",
     "static/js/787.d9a20797.chunk.js": "/static/js/787.d9a20797.chunk.js",
     "static/media/tom_tmb.jpg": "/static/media/tom_tmb.2217804ed159af539808.jpg",
     "static/media/TOM_PROFILE.jpg": "/static/media/TOM_PROFILE.da1461f5e983224548ad.jpg",
     "static/media/smartBrain.png": "/static/media/smartBrain.df4f34d7e74ec1629209.png",
     "static/media/crwnClothing.png": "/static/media/crwnClothing.cf7e37d2130c8334cfdf.png",
-    "static/media/tomrossner.pdf": "/static/media/tomrossner.7c32dca155fe9e561298.pdf",
+    "static/media/tomrossner.pdf": "/static/media/tomrossner.ee51254320563a187cd3.pdf",
     "static/media/tomprofile-1.jpg": "/static/media/tomprofile-1.c753a71b840960e3457a.jpg",
     "static/media/projectMania.png": "/static/media/projectMania.32052fe68922e115ba2d.png",
     "static/media/tomLightText.png": "/static/media/tomLightText.ebbace135e8cd63a65b8.png",
@@ -33,11 +33,11 @@
     "static/media/html.svg": "/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
     "static/media/nextjs.svg": "/static/media/nextjs.17fe1720dcc66b60fc1a5a70d104d1dd.svg",
     "main.5d97759a.css.map": "/static/css/main.5d97759a.css.map",
-    "main.fca4533d.js.map": "/static/js/main.fca4533d.js.map",
+    "main.68bff69f.js.map": "/static/js/main.68bff69f.js.map",
     "787.d9a20797.chunk.js.map": "/static/js/787.d9a20797.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5d97759a.css",
-    "static/js/main.fca4533d.js"
+    "static/js/main.68bff69f.js"
   ]
 }
