@@ -15,6 +15,7 @@ import GitLogo from "../assets/Git.svg";
 import TypeScriptLogo from "../assets/typescript.svg";
 import NextJsLogo from "../assets/nextjs.svg";
 import TailwindCssLogo from "../assets/tailwindcss.svg";
+import DockerLogo from "../assets/Docker.svg";
 
 export const techs = [
     {
@@ -46,7 +47,7 @@ export const techs = [
       logo: HTMLLogo
     },
     {
-      name: 'TailwindCSS',
+      name: 'Tailwind CSS',
       logo: TailwindCssLogo
     },
     {
@@ -84,5 +85,9 @@ export const techs = [
     {
       name: 'Git',
       logo: GitLogo
+    },
+    {
+      name: 'Docker',
+      logo: DockerLogo
     },
 ]
