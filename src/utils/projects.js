@@ -2,7 +2,8 @@ import SASSLogo from "../assets/sass.svg";
 import ReactLogo from "../assets/react.svg";
 import NodeJSLogo from "../assets/nodejs.svg";
 import MongoDBLogo from "../assets/mongodb.svg";
-import FirebaseLogo from "../assets/firebase.svg";
+import FirebaseLogo from "../assets/firebase.svg"; 
+import ElectronLogo from "../assets/electron.svg"; 
 import ExpressJSLogo from "../assets/expressjs.svg";
 import ReduxLogo from "../assets/redux.svg";
 import SocketIOLogo from "../assets/socketIO.svg";
@@ -12,8 +13,46 @@ import wordleBG from "../assets/wordle.png";
 import projectManiaBG from "../assets/projectMania.png";
 import smartBrainBG from "../assets/smartBrain.png";
 import crwnClothingBG from "../assets/crwnClothing.png";
+import TailwindCSSLogo from "../assets/tailwindcss.svg";
 
 export const projects = [
+    {
+        name: "Strimz",
+        shortDesc: "Desktop streaming app",
+        description: "Strimz is a desktop app that streams video directly from torrent files or magnet links using peer-to-peer technology.",
+        technologies: [
+            {
+                logo: ElectronLogo,
+                name: "Electron"
+            },
+            {
+                logo: ReactLogo,
+                name: "React"
+            },
+            {
+                logo: ReduxLogo,
+                name: "Redux"
+            },
+            {
+                logo: NodeJSLogo,
+                name: "Node.js"
+            },
+            {
+                logo: ExpressJSLogo,
+                name: "Express"
+            },
+            {
+                logo: SocketIOLogo,
+                name: "Socket.io"
+            },
+            {
+                logo: TailwindCSSLogo,
+                name: "Tailwind CSS"
+            }
+        ],
+        repoLink: "https://github.com/TomRossner/strimz.git",
+        bgImg: "",
+    },
     {
         name: "ProjectMania",
         shortDesc: "Project management tool",

@@ -16,11 +16,16 @@ import TypeScriptLogo from "../assets/typescript.svg";
 import NextJsLogo from "../assets/nextjs.svg";
 import TailwindCssLogo from "../assets/tailwindcss.svg";
 import DockerLogo from "../assets/Docker.svg";
+import ElectronLogo from "../assets/electron.svg";
 
 export const techs = [
     {
       name: 'Next.js',
       logo: NextJsLogo
+    },
+    {
+      name: 'Electron',
+      logo: ElectronLogo
     },
     {
       name: 'React',

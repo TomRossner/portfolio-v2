@@ -19,7 +19,7 @@ const Project = ({project}) => {
         </div>
         <p className='project-description'>{description}.</p>
         <div className='buttons-container'>
-          <a href={webPage} target='_blank' rel='noreferrer' className='link'><TbWorldWww className='icon'/>Live app</a>
+          <a href={webPage} target='_blank' rel='noreferrer' style={{color: webPage ? '' : 'gray'}} className='link'><TbWorldWww className='icon'/>{webPage ? 'Live app' : 'Not available'}</a>
           <a href={repoLink} target='_blank' rel='noreferrer' className='link'><BsCodeSlash className='icon'/>Source code</a>
         </div>
         <hr />
