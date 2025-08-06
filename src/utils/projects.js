@@ -95,66 +95,66 @@ export const projects = [
         webPage: "https://TomRossner.github.io/project-mania",
         bgImg: projectManiaBG
     },
-    {
-        name: "SmartBrain",
-        shortDesc: "Face recognition app",
-        description: "SmartBrain is a face detection application which can detect people's faces in images",
-        technologies: [
-            {
-                logo: ReactLogo,
-                name: "React"
-            },
-            {
-                logo: ReduxLogo,
-                name: "Redux"
-            },
-            {
-                logo: NodeJSLogo,
-                name: "Node.js"
-            },
-            {
-                logo: ExpressJSLogo,
-                name: "Express"
-            },
-            {
-                logo: MongoDBLogo,
-                name: "MongoDB"
-            },
-            {
-                logo: SASSLogo,
-                name: "SASS"
-            },
-        ],
-        repoLink: "https://github.com/TomRossner/smartbrain.git",
-        webPage: "https://TomRossner.github.io/smartbrain",
-        bgImg: smartBrainBG
-    },
-    {
-        name: "CRWN Clothing",
-        shortDesc: "E-commerce app",
-        description: "CRWN Clothing is an E-commerce application which includes different clothing categories for both men and women",
-        technologies: [
-            {
-                logo: ReactLogo,
-                name: "React"
-            },
-            {
-                logo: ReduxLogo,
-                name: "Redux"
-            },
-            {
-                logo: FirebaseLogo,
-                name: "Firebase"
-            },
-            {
-                logo: SASSLogo,
-                name: "SASS"
-            }
-        ],
-        repoLink: "https://github.com/TomRossner/crwn-clothing.git",
-        webPage: "https://TomRossner.github.io/crwn-clothing",
-        bgImg: crwnClothingBG
-    },
+    // {
+    //     name: "SmartBrain",
+    //     shortDesc: "Face recognition app",
+    //     description: "SmartBrain is a face detection application which can detect people's faces in images",
+    //     technologies: [
+    //         {
+    //             logo: ReactLogo,
+    //             name: "React"
+    //         },
+    //         {
+    //             logo: ReduxLogo,
+    //             name: "Redux"
+    //         },
+    //         {
+    //             logo: NodeJSLogo,
+    //             name: "Node.js"
+    //         },
+    //         {
+    //             logo: ExpressJSLogo,
+    //             name: "Express"
+    //         },
+    //         {
+    //             logo: MongoDBLogo,
+    //             name: "MongoDB"
+    //         },
+    //         {
+    //             logo: SASSLogo,
+    //             name: "SASS"
+    //         },
+    //     ],
+    //     repoLink: "https://github.com/TomRossner/smartbrain.git",
+    //     webPage: "https://TomRossner.github.io/smartbrain",
+    //     bgImg: smartBrainBG
+    // },
+    // {
+    //     name: "CRWN Clothing",
+    //     shortDesc: "E-commerce app",
+    //     description: "CRWN Clothing is an E-commerce application which includes different clothing categories for both men and women",
+    //     technologies: [
+    //         {
+    //             logo: ReactLogo,
+    //             name: "React"
+    //         },
+    //         {
+    //             logo: ReduxLogo,
+    //             name: "Redux"
+    //         },
+    //         {
+    //             logo: FirebaseLogo,
+    //             name: "Firebase"
+    //         },
+    //         {
+    //             logo: SASSLogo,
+    //             name: "SASS"
+    //         }
+    //     ],
+    //     repoLink: "https://github.com/TomRossner/crwn-clothing.git",
+    //     webPage: "https://TomRossner.github.io/crwn-clothing",
+    //     bgImg: crwnClothingBG
+    // },
     {
         name: "Wordle",
         shortDesc: "Wordle game clone",
