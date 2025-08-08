@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
-import Tom_Rossner_Resume from "../../assets/tomrossner.pdf";
+import Tom_Rossner_Resume from "../../assets/Tom_Rossner.pdf";
 import { BsDownload } from 'react-icons/bs';
 import Sidebar from './Sidebar';
 import useTheme from '../../hooks/useTheme';
@@ -16,7 +16,7 @@ const NavMobile = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = Tom_Rossner_Resume;
-        link.download = 'tomrossner.pdf';
+        link.download = 'Tom_Rossner.pdf';
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
         link.click();
