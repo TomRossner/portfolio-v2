@@ -13,7 +13,7 @@ export const projects = [
     {
         name: "Strimz",
         shortDesc: "Desktop streaming app",
-        description: "Strimz is a desktop app that streams video directly from torrent files or magnet links using peer-to-peer technology.",
+        description: "Strimz is a desktop app that streams video directly from torrent files or magnet links using peer-to-peer technology",
         technologies: [
             {
                 logo: ElectronLogo,

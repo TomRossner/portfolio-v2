@@ -241,11 +241,40 @@
                     gap: 1em;
                     font-weight: 600;
                     color: grey;
+                    width: 100%;
 
                     .icon{
                         font-size: 1.4rem;
                         color: black;
                     }
+                    
+                    >button {
+                        padding-inline: 0.3rem;
+                        text-align: center;
+                        padding-top: 0.2rem;
+                        justify-self: end;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        border: 1px solid rgb(197, 197, 197);
+                        color: rgb(146, 146, 146);
+                        
+                        &:hover {
+                            color: rgb(0, 0, 0);
+                            border: 1px solid rgb(0, 0, 0);
+                        }
+
+                        &.copied {
+                            color: rgb(17, 180, 17);
+                            border-color: rgb(17, 180, 17);
+                        }
+                    }
+                }
+
+                .email {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    flex-grow: 1;
                 }
             }
 

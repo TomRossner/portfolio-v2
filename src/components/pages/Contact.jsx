@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useRef, useState } from 'react';
 import Heading from '../common/Heading';
 import "../../styles/contact.scss";
 import useScrollReset from '../../hooks/useScrollReset';
-import {IoMailOutline} from "react-icons/io5";
+import {IoCheckmarkDoneOutline, IoCopyOutline, IoMailOutline} from "react-icons/io5";
 import {BsTelephone, BsGithub, BsLinkedin} from "react-icons/bs";
 import { sendMail } from '../../services/api';
 import {RxCross1} from "react-icons/rx";
@@ -65,7 +65,7 @@ const Contact = () => {
       setIsLoading(false);
 
       // Set error to be the error we received
-      setError(error.response.data.error);
+      setError(error.response?.data?.error ? error.response.data.error : 'Failed sending email');
     }
   }
 
@@ -75,6 +75,21 @@ const Contact = () => {
 
   const closeEmailSentStatus = () => {
     setEmailSentStatusShown(false);
+  }
+
+  const emailRef = useRef(null);
+  const [hasCopied, setHasCopied] = useState(false);
+
+  const handleCopy = async () => {
+    if (!emailRef.current) return;
+
+    setHasCopied(true);
+    const text = emailRef.current.innerText;
+    await navigator.clipboard.writeText(text);
+
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 1500);
   }
 
   return (
@@ -119,7 +134,13 @@ const Contact = () => {
           <h3>Tom Rossner</h3>
           <div id='phone-email'>
             <p><BsTelephone className='icon'/>058-4844789</p>
-            <p><IoMailOutline className='icon'/>tomrossner2@gmail.com</p>
+            <p>
+              <span className='email'>
+                <IoMailOutline className='icon'/>
+                <span ref={emailRef}>tomrossner2@gmail.com</span>
+              </span>
+              <button onClick={handleCopy} title='Copy email' className={hasCopied && 'copied'}>{hasCopied ? <IoCheckmarkDoneOutline/> : <IoCopyOutline/>}</button>
+            </p>
           </div>
           <div className="buttons-container">
             <a href='https://www.linkedin.com/in/tom-rossner/' target='_blank' rel='noreferrer'><BsLinkedin id='linkedin' className='icon'/>LinkedIn</a>

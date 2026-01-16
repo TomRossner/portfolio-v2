@@ -17,6 +17,7 @@ import NextJsLogo from "../assets/nextjs.svg";
 import TailwindCssLogo from "../assets/tailwindcss.svg";
 import DockerLogo from "../assets/Docker.svg";
 import ElectronLogo from "../assets/electron.svg";
+import CursorLogo from "../assets/cursor.svg";
 
 export const techs = [
     {
@@ -94,5 +95,9 @@ export const techs = [
     {
       name: 'Docker',
       logo: DockerLogo
+    },
+    {
+      name: 'Cursor AI',
+      logo: CursorLogo
     },
 ]

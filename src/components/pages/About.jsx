@@ -1,8 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
 import "../../styles/about.scss";
-import profile from "../../assets/TOM_PROFILE.jpg";
-import profile2 from "../../assets/tomprofile-1.jpg";
-import tomTMB from "../../assets/tom_tmb.jpg";
+import TOM_PROFILE from "../../assets/TOM_PROFILE.webp";
 import { Link } from 'react-router-dom';
 import Heading from '../common/Heading';
 import { techs } from '../../utils/techstack';
@@ -13,28 +10,10 @@ import useTheme from '../../hooks/useTheme';
 import { THEME } from '../../utils/theme';
 
 const About = () => {
-  const index = useRef(0);
-  const images = [profile, tomTMB, profile2];
-  const [currentImg, setCurrentImg] = useState(images[index.current]);
-  const [animate, setAnimate] = useState(false);
-
   const {theme} = useTheme();
   const {DARK} = THEME;
   
   useScrollReset();
-
-  const showNext = () => {
-    const imgIndex = index.current + 1;
-    index.current = imgIndex;
-    
-    if (index.current >= images.length) {
-      index.current = 0;
-      setCurrentImg(images[index.current]);
-      return;
-    } else {
-      setCurrentImg(images[imgIndex]);
-    }
-  }
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -44,19 +23,6 @@ const About = () => {
     link.rel = 'noopener noreferrer';
     link.click();
   }
-
-  useEffect(() => {
-    if (!currentImg) return;
-    else {
-      setAnimate(true);
-
-      const timeout = setTimeout(() => {
-        setAnimate(false);
-      }, 200);
-
-      return () => clearTimeout(timeout);
-    }
-  }, [currentImg]);
 
   return (
     <div id='aboutContainer'>
@@ -81,17 +47,9 @@ const About = () => {
           </div>
           <div id='images-techStack'>
             <div className='images-container'>
-
-              <div className={`img-container ${animate && 'animate'}`} onClick={showNext}>
-                <img src={currentImg} alt="profile"/>
+              <div className={`img-container animate`}>
+                <img src={TOM_PROFILE} alt="profile" />
               </div>
-
-              {images.filter(img => img !== currentImg).map((img, index) => (
-                <div className='img-container' key={index}>
-                  <img src={img} alt="profile" loading='lazy'/>
-                </div>
-              ))}
-
             </div>
 
             <div id='tech-stack'>

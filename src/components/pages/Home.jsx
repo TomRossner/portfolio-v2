@@ -1,5 +1,4 @@
-import React from 'react';
-import profile from "../../assets/TOM_PROFILE.jpg";
+import profile from "../../assets/TOM_PROFILE.webp";
 import { Link } from 'react-router-dom';
 import Heading from '../common/Heading';
 import useScrollReset from '../../hooks/useScrollReset';
