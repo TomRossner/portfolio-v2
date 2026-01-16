@@ -1,8 +1,5 @@
-import SASSLogo from "../assets/sass.svg";
 import ReactLogo from "../assets/react.svg";
 import NodeJSLogo from "../assets/nodejs.svg";
-import MongoDBLogo from "../assets/mongodb.svg";
-import FirebaseLogo from "../assets/firebase.svg"; 
 import ElectronLogo from "../assets/electron.svg"; 
 import ExpressJSLogo from "../assets/expressjs.svg";
 import ReduxLogo from "../assets/redux.svg";
@@ -10,9 +7,6 @@ import SocketIOLogo from "../assets/socketIO.svg";
 import TypeScriptLogo from "../assets/typescript.svg";
 import CSSLogo from "../assets/css3.svg";
 import wordleBG from "../assets/wordle.png";
-import projectManiaBG from "../assets/projectMania.png";
-import smartBrainBG from "../assets/smartBrain.png";
-import crwnClothingBG from "../assets/crwnClothing.png";
 import TailwindCSSLogo from "../assets/tailwindcss.svg";
 
 export const projects = [
@@ -24,6 +18,10 @@ export const projects = [
             {
                 logo: ElectronLogo,
                 name: "Electron"
+            },
+            {
+                logo: TypeScriptLogo,
+                name: "TypeScript"
             },
             {
                 logo: ReactLogo,
@@ -54,46 +52,30 @@ export const projects = [
         bgImg: "",
     },
     {
-        name: "ProjectMania",
-        shortDesc: "Project management tool",
-        description: "ProjectMania is a project management tool made to help you organize and keep track of your project tasks",
+        name: "KtivApp",
+        shortDesc: "Transcription tool",
+        description: "KtivApp is a Hebrew-to-Arabic transcription desktop app",
         technologies: [
+            {
+                logo: ElectronLogo,
+                name: "Electron"
+            },
+            {
+                logo: TypeScriptLogo,
+                name: "TypeScript"
+            },
             {
                 logo: ReactLogo,
                 name: "React"
             },
             {
-                logo: ReduxLogo,
-                name: "Redux"
-            },
-            {
-                logo: NodeJSLogo,
-                name: "Node.js"
-            },
-            {
-                logo: ExpressJSLogo,
-                name: "Express"
-            },
-            {
-                logo: SocketIOLogo,
-                name: "Socket.io"
-            },
-            {
-                logo: MongoDBLogo,
-                name: "MongoDB"
-            },
-            {
-                logo: FirebaseLogo,
-                name: "Firebase"
-            },
-            {
-                logo: SASSLogo,
-                name: "SASS"
+                logo: TailwindCSSLogo,
+                name: "TailwindCSS"
             }
         ],
-        repoLink: "https://github.com/TomRossner/project-mania.git",
-        webPage: "https://TomRossner.github.io/project-mania",
-        bgImg: projectManiaBG
+        repoLink: "https://github.com/TomRossner/ktivapp.git",
+        webPage: "https://github.com/TomRossner/ktivapp/releases/latest",
+        bgImg: ''
     },
     // {
     //     name: "SmartBrain",
