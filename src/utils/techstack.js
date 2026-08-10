@@ -18,6 +18,8 @@ import TailwindCssLogo from "../assets/tailwindcss.svg";
 import DockerLogo from "../assets/Docker.svg";
 import ElectronLogo from "../assets/electron.svg";
 import CursorLogo from "../assets/cursor.svg";
+import ViteLogo from "../assets/Vite.js.svg";
+import NginxLogo from "../assets/NGINX.svg";
 
 export const techs = [
     {
@@ -99,5 +101,13 @@ export const techs = [
     {
       name: 'Cursor AI',
       logo: CursorLogo
+    },
+    {
+      name: 'Vite.js',
+      logo: ViteLogo
+    },
+    {
+      name: 'NGINX',
+      logo: NginxLogo
     },
 ]
