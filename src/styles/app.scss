@@ -272,3 +272,16 @@
         }
     }
 }
+// Loading / error states for content fetched from the content API
+.content-spinner{
+    width: 60px;
+    height: 60px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.content-error{
+    width: 100%;
+    text-align: center;
+    color: gray;
+}

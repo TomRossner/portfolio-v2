@@ -2,27 +2,22 @@ import "../../styles/about.scss";
 import TOM_PROFILE from "../../assets/TOM_PROFILE.webp";
 import { Link } from 'react-router-dom';
 import Heading from '../common/Heading';
-import { techs } from '../../utils/techstack';
+import { getTechnologies, downloadResume } from '../../services/content';
+import useContent from '../../hooks/useContent';
+import spinner from '../../assets/spinner.svg';
 import useScrollReset from '../../hooks/useScrollReset';
 import { BsDownload } from 'react-icons/bs';
-import Tom_Rossner_Resume from "../../assets/Tom_Rossner.pdf";
 import useTheme from '../../hooks/useTheme';
 import { THEME } from '../../utils/theme';
 
 const About = () => {
   const {theme} = useTheme();
   const {DARK} = THEME;
-  
-  useScrollReset();
 
-  const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = Tom_Rossner_Resume;
-    link.download = 'Tom_Rossner.pdf';
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.click();
-  }
+  useScrollReset();
+  const {data: techs, loading} = useContent(getTechnologies);
+
+  const handleDownload = downloadResume;
 
   return (
     <div id='aboutContainer'>
@@ -54,6 +49,7 @@ const About = () => {
 
             <div id='tech-stack'>
               <div className='stack'>
+                {loading && <img src={spinner} alt="Loading tech stack" className='content-spinner'/>}
                 {techs.map(tech => (
                   <div className={`tech ${theme === DARK && 'dark'}`} key={tech.name} title={tech.name}>
                     <img src={tech.logo} alt={tech.name} />
